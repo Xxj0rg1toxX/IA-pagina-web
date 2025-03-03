@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Andrés Nocua Mariño</title>
+    <link rel="icon" href="IA.ico">
+    <link rel="stylesheet" href="General.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Jorge Andrés Nocua Mariño</h1>
+        <h2>Universidad Sergio Arboleda</h2>
+        <h2>Introducción a la IA: G01</h2>
+    </header>
+    <br>
+    <section class="talleres-container">
+        <div class="talleres-lista">
+            <h2>Mis Talleres</h2>
+            <br>
+            <ul>
+                <li><a href="#" onclick="mostrarVistaPrevia('1zXp9GeEdcW2Xne7QbYCFpznyr5WtfNDd')">Taller 1</a></li>
+                <li><a href="#" onclick="mostrarVistaPrevia('1Kb56I8Xrw6O4ufvbORSDW8FDbWwCaZ92')">Taller 2</a></li>
+            </ul>
+        </div>
+        <div class="vista-previa">
+            <h2>Vista Previa</h2>
+            <br>
+            <iframe id="vistaPrevia" src="" width="100%" height="700px"></iframe>
+        </div>
+    </section>
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 [Jorge Andrés Nocua Mariño] - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        function mostrarVistaPrevia(id) {
+            document.getElementById('vistaPrevia').src = `https://drive.google.com/file/d/${id}/preview`;
+        }
+    </script>
+</body>
+</html>
